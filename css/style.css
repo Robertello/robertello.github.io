@@ -1,0 +1,472 @@
+/*index.html*/
+
+/*Estilo fuentes*/
+
+h1{
+
+    font-size:25px;
+    font-family:'Palatino Linotype';
+    font-style:oblique;
+    font-weight:bolder;
+}
+h2 {
+    font-size: 20px;
+    font-family: 'Palatino Linotype';   
+    font-weight: bold;
+}
+p {
+    font-size: 15px;
+    font-family:'Palatino Linotype';
+    line-height:200%;
+}
+li {
+    font-size: 15px;
+    font-family: 'Palatino Linotype';
+    line-height: 200%;
+}
+#h2Pie {
+    font-size: 12px;
+    font-family: 'Palatino Linotype';
+}
+
+/*Estilo fuentes responsive*/
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 18px;
+        font-family: 'Palatino Linotype';
+        font-style: oblique;
+        font-weight: bolder;
+    }
+
+    h2 {
+        font-size: 15px;
+        font-family: 'Palatino Linotype';
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 12px;
+        font-family: 'Palatino Linotype';
+        line-height: 200%;
+    }
+
+    li {
+        font-size: 12px;
+        font-family: 'Palatino Linotype';
+        line-height: 200%;
+    }
+
+    #h2Pie {
+        font-size: 10px;
+        font-family: 'Palatino Linotype';
+    }
+}
+/*Contenedor1*/
+
+
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: aliceblue;
+   
+}
+.contenedorLogo {
+    width: 100%;
+    margin-left: 10%;
+ 
+}
+
+.logo{
+    width:60%;
+  
+}
+
+
+
+.contenedorMenu {
+    display: grid;
+    margin-left: 15%;
+    width: 80%;
+}
+
+/*menu*/
+
+
+.menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-top:50px;  
+    background-color: lightcyan;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+    display: block;
+    transition: all .5s ease;
+    text-align:center;
+}
+
+    .menu li a:hover {
+        background-color: deepskyblue;
+    }
+
+
+
+@media screen and (min-width: 600px) {
+
+    .inicio ul {
+        display: grid;
+        text-align: center;
+    
+    }
+
+        .inicio ul li {
+            display: grid;
+            grid-row:start;
+            width: 100%;
+           
+        }
+}
+/*Contenedor2*/
+
+
+
+#contenedor2 {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "textoContenedor2 fotoContenedor2";
+
+    background-color: azure;
+    
+}
+
+.textoContenedor2 {
+    display: grid;
+    grid-area: textoContenedor2;
+    width: 80%;
+    margin-left: 3%;
+}
+
+.fotoContendor2 {
+    grid-area: fotoContenedor2;
+    display: grid;
+    align-content: center;
+    width: 100%;
+    
+}
+
+
+#foto1index {
+    display: grid;
+    width: 50%;
+    align-items:center;
+    margin-left:45%;
+    
+}
+
+/*Contenedor3*/
+#contenedor3 {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "fotoContenedor3 textoContenedor3 ";
+    background-color: aliceblue;
+}
+
+.fotoContendor3 {
+    display: grid;
+    grid-area: fotoContenedor3;
+    align-content: center;
+    width: 100%;
+}
+
+#foto2index {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.textoContenedor3 {
+    grid-area: textoContenedor3;
+    display: grid;
+    width: 80%;
+    margin-left: 17%;
+    justify-items:end;
+    text-align:right;
+}
+
+/*Pie de pagina*/
+#pie {
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-areas: "pieArriba"
+                         "pieAbajo";
+    background-color: azure;
+}
+
+#pieArriba {
+    display: grid;
+    grid-area: pieArriba;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#pieAbajo {
+    display: grid;
+    grid-area: pieAbajo;
+    grid-template-areas: "iconosPie iconosPie iconosPie iconosPie ";
+    justify-content: center;
+    width: 80%;
+    margin-left:15%;
+}
+
+.iconosPie {
+    display: grid;
+    grid-area: iconosPie;
+    width: 20%;
+
+}
+
+/*acerca_de_mi.html*/
+
+.contenedor1_acerca_de_mi {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "textoAcercaContenedor1 fotoAcercaContenedor2";
+    padding-top: 5%;
+    background-color: azure;
+    
+}
+
+#textoAcercaContenedor1 {
+    display: grid;
+    grid-area: textoAcercaContenedor1;
+    width: 75%;
+    margin-left: 3%;
+}
+.fotoAcercaContenedor1 {
+    display: grid;
+    grid-area: fotoAcercaContenedor2;
+    align-items: start;
+    width: 30%;
+    margin-left: 62%;
+
+}
+#perfilfoto {
+    width: 100%;
+
+    
+}
+
+.contenedor2_acerca_de_mi {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "fotoAcercaContenedor2 textoAcercaContenedor2";
+    padding-top: 5%;
+    background-color: aliceblue;
+    
+}
+
+#textoAcercaContenedor2 {
+    display: grid;
+    grid-area: textoAcercaContenedor2;
+    width: 75%;
+    margin-left: 22%;
+    text-align: right;
+   
+}
+
+.fotoAcercaContenedor2 {
+    display: grid;
+    grid-area: fotoAcercaContenedor2;
+    width: 60%;
+    align-items: start;
+    margin-left: 5%;
+    
+}
+
+#educacionfoto {
+    width: 100%;
+}
+
+.contenedor3_acerca_de_mi {
+    width: 100%;
+    display: grid;
+    padding-top: 5%;
+    background-color: lightcyan;
+}
+
+#textoAcercaContenedor3 {
+    width: 100%;
+    display: grid;
+    text-align:center;
+    
+
+}
+.fotoAcercaContenedor3 {
+    display: grid;
+    /*grid-template-areas: "logoNintendo"
+        "logoConsolas logoConsolas logoConsolas";
+        */
+
+    grid-template-columns: [x0] 20% [x1] 10% [x2] 20%;
+    grid-template-rows: [y0] 40% [y1] 20% [y2] 40%;
+    align-content: center;
+    justify-content: center;
+}
+#nintendo {
+    display: grid;
+    grid-column: x0;
+    grid-row: y0;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+#playstation {
+    display: grid;
+    grid-column: x2;
+    grid-row: y0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#xbox {
+    display: grid;
+    grid-column: x0;
+    grid-row: y2;
+    width: 100%;
+    height: 100%;
+    
+}
+#pc {
+    display: grid;
+    grid-column: x2;
+    grid-row: y2;
+    width: 100%;
+    height: 100%;
+  
+
+}
+
+
+/*experiencia.html*/
+
+
+#contenedor1_experiencia {
+    display: grid;
+    grid-template-areas: "contenedorPrincipal contenedorLateral";
+    width: 100%;
+    background-color: beige;
+ }
+#contenedor2_experiencia {
+    display: grid;
+    grid-template-areas: "contenedorPrincipal contenedorLateral";
+    width: 100%;
+    background-color: lightcyan;
+}
+#contenedor3_experiencia {
+    display: grid;
+    grid-template-areas: "contenedorPrincipal contenedorLateral";
+    width: 100%;
+    background-color: aliceblue;
+}
+
+#contenedorPrincipal {
+    display: grid;
+    width: 90%;
+    background-color: azure;
+    margin-left: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-items:center;
+}
+#contenedorLateral {
+    width: 80%;
+    display: grid;
+    background-color: antiquewhite;
+    margin-left:auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.fotoExperiencia {
+    width: 50%;
+    display: grid;
+    align-self: center;
+}
+
+
+
+/*contacto.html*/
+
+.contenedor1_contacto {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "textoContactoContenedor fotoContactoContenedor1";
+    padding-top: 5%;
+    background-color: azure;
+}
+
+#textoContactoContenedor1 {
+    width: 75%;
+    display: grid;
+    margin-left: 3%;
+}
+
+.fotoContactoContenedor1 {
+    display: grid;
+    width: stretch;
+    height: stretch;
+    justify-items:end;
+    align-items: center;
+    margin-right:10%;
+}
+
+#iphonefoto {
+    display: grid;
+    width: stretch;
+
+    
+}
+
+.contenedor2_contacto {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "fotoContactoContenedor2 formularioContactoContenedor2";
+    justify-items: start;
+    padding-top: 5%;
+    background-color: aliceblue;
+}
+
+.formularioContactoContenedor2 {
+    width: 70%;
+    display: grid;
+    margin-left: 25%;
+    justify-items:end;
+    text-align:right;
+
+}
+
+.fotoContactoContenedor2 {
+    display: grid;
+    width: stretch;
+    height: stretch;
+    justify-items: start;
+    align-items: end;
+    margin-right: 55%;
+    
+}
+
